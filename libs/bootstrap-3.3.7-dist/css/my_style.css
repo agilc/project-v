@@ -1,0 +1,7 @@
+#app_layout{
+    height: 100vh;
+}
+#login_form{
+    height: 50%;
+    background-color: #e8e8e8;
+}
