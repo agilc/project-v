@@ -1,3 +1,8 @@
-$( "#login_submit_btn" ).click(function() {
-  alert( "Handler for .click() called." );
-});
+angular.module('myApp', [])
+.controller('myCtrl', ['$scope', function($scope) {
+    $scope.count = 0;
+    $scope.myFunc = function() {
+        $scope.count++;
+        alert();
+    };
+}]);

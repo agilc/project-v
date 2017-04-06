@@ -5,19 +5,19 @@
 		<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="css/my_style.css">
 
-		<script src="js/index.js"></script>
+		<script src="libs/jquery-3.2.0.min.js"></script>
 		<script src="libs/angular.min .js"></script>
 		<script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-		<script src="libs/bootstrap-3.3.7-dist/js/jquery-1.11.3.min.js"></script>
+		<script src="js/index.js"></script>
 	</head>
 	<body>
-		<div id="app_layout" class="row" style="background-image: url(images/backgrond.jpg);">
+		<div id="app_layout" ng-controller="myCtrl" ng-app="myApp" class="row" style="background-image: url(images/backgrond.jpg);">
 			<!-- <img src="images/backgrond.jpg" alt="Mountain View" style="height:100%; width:100%;"> -->
 			<div class="col-md-4"></div>
-			<div id="login_form" class="col-md-4" ng-app="">
+			<div id="login_form" class="col-md-4">
 				<p>Name : <input type="text" ng-model="name"></p>
 				<p>Password : <input type="password" ng-model="password"></p>
-				<button id="login_submit_btn" type="button" class="btn btn-primary">Submit</button>
+				<button ng-click="myFunc()" type="button" class="btn btn-primary">Submit</button>
 			</div>
 			<div class="col-md-4"></div>
 		</div>
